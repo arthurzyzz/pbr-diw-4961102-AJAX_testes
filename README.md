@@ -4,10 +4,10 @@ Exemplos de requisição AJAX
 
 XHR
 
-	function success () { console.log(JSON.parse(this.responseText)); } 
+	unction success () { console.log(JSON.parse(this.responseText)); } 
 	function error (err) { console.log('Erro:', err); }
 	var xhr = new XMLHttpRequest(); 
-	xhr.onload = success; 
+	xhr.onlofad = success; 
 	xhr.onerror = error;
 	xhr.open('GET', 'https://api.github.com/users/paulopta'); 
 	xhr.send();

@@ -1,119 +1,154 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Busca Endereço via CEP</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+  <title>Busca Endereço via CEP</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/album.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bg-dark {
-        background-color: blueviolet !important;
-      }
-    </style>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/album.css" rel="stylesheet">
 
-  </head>
+  <style>
+    .bg-dark {
+      background-color: blueviolet !important;
+    }
+  </style>
 
-  <body>
+</head>
 
-    <header>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">            
-            <strong>&nbsp;&nbsp;Busca Endereço por CEP</strong>
-          </a>          
-        </div>
+<body>
+
+  <header>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>&nbsp;&nbsp;Busca Endereço por CEP</strong>
+        </a>
       </div>
-    </header>
-    <main role="main">
+    </div>
+  </header>
+  <main role="main">
     <div class="row">
-            <section class="text-center col-12">
-              <br/>  
-              <h2>Atividade</h2>
-                <p>Utilizando os recursos de AJAX e a API do site VIACEP (https://viacep.com.br/), implemente a funcionalidade de busca de endereço por CEP.
-                </p>  
-            </section>
-    </div>    
+      <section class="text-center col-12">
+        <br />
+        <h2>Atividade</h2>
+        <p>Utilizando os recursos de AJAX e a API do site VIACEP (https://viacep.com.br/), implemente a funcionalidade
+          de busca de endereço por CEP.
+        </p>
+      </section>
+    </div>
     <div class="row">
       <section class="jumbotron text-center col-6">
         <div class="container">
           <h5 class="jumbotron-heading">CEP</h5>
           <p class="lead text-muted"><input type="text" id="cep" placeholder="somente os 8 digitos"></p>
           <p>
-            <a href="#" class="btn btn-primary my-2"> <img src="assets/img/lupa.svg" width="15px" id="btnBuscarCep"> Buscar</a>            
+            <a href="#" class="btn btn-primary my-2" id="btnClick"> <img src="assets/img/lupa.svg" width="15px"
+                id="btnBuscarCep"> Buscar</a>
           </p>
         </div>
+
       </section>
       <section class="col-6">
         <form>
-  <div class="form-group row">
-    <label for="logradouro" class="col-sm-2 col-form-label">Logradouro</label>
-    <div class="col-sm-10">
-      <input type="logradouro" class="form-control" id="logradouro">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
-    <div class="col-sm-10">
-      <input type="bairro" class="form-control" id="bairro">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
-    <div class="col-sm-10">
-      <input type="cidade" class="form-control" id="cidade">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="estado" class="col-sm-2 col-form-label">Estado</label>
-    <div class="col-sm-10">
-      <input type="estado" class="form-control" id="estado">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="regiao" class="col-sm-2 col-form-label">Região</label>
-    <div class="col-sm-10">
-      <input type="regiao" class="form-control" id="regiao">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="ddd" class="col-sm-2 col-form-label">DDD</label>
-    <div class="col-sm-10">
-      <input type="ddd" class="form-control" id="ddd">
-    </div>
-  </div>
-</form>
+          <div class="form-group row">
+            <label for="logradouro" class="col-sm-2 col-form-label">Logradouro</label>
+            <div class="col-sm-10">
+              <input type="logradouro" class="form-control" id="logradouro">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
+            <div class="col-sm-10">
+              <input type="bairro" class="form-control" id="bairro">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
+            <div class="col-sm-10">
+              <input type="cidade" class="form-control" id="cidade">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="estado" class="col-sm-2 col-form-label">Estado</label>
+            <div class="col-sm-10">
+              <input type="estado" class="form-control" id="estado">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="regiao" class="col-sm-2 col-form-label">Região</label>
+            <div class="col-sm-10">
+              <input type="regiao" class="form-control" id="regiao">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="ddd" class="col-sm-2 col-form-label">DDD</label>
+            <div class="col-sm-10">
+              <input type="ddd" class="form-control" id="ddd">
+            </div>
+          </div>
+        </form>
       </section>
-      </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="text-muted">
-      <div class="container text-center">
-        <p>Exercício apresentado na disciplina de Desenvolvimento de Interfaces WEB - 
+  <footer class="text-muted">
+    <div class="container text-center">
+      <p>Exercício apresentado na disciplina de Desenvolvimento de Interfaces WEB -
         PUC MINAS Barreiro - Prof. Paulo Henrique Rodrigues</p>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script>
+      document.getElementById('btnClick').addEventListener('click', function (event) {
+      
+      var cep = $("#cep").val();
+      var end = `https://viacep.com.br/ws/${cep}/json/`;
+      
+      function success () { 
+        document.getElementById("logradouro").value = this.responseText.logradouro;
+        document.getElementById("bairro").value = this.responseText.bairro;
+        document.getElementById("cidade").value = this.responseText.cidade;
+        document.getElementById("estado").value = this.responseText.estado;
+        document.getElementById("regiao").value = this.responseText.regiao;
+        document.getElementById("ddd").value = this.responseText.ddd;
+
+      } 
+      function error (err) { console.log('Erro:', err); }
+      var xhr = new XMLHttpRequest(); 
+      xhr.onload = success; 
+      xhr.onerror = error;
+      xhr.open('GET', end); 
+      xhr.send();
+      
+      
+
+
+    });
     
-    <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/holder.min.js"></script>
-  </body>
+  </script>
+
+
+
+  <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/holder.min.js"></script>
+</body>
+
 </html>
