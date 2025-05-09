@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Buscador usuários do GIT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">            
+            <strong>&nbsp;&nbsp;Busca Usuários do GIT</strong>
+          </a>          
+        </div>
+      </div>
+    </header>
+    <main role="main">
+    <div class="row">
+            <section class="text-center col-12">
+                <h2>Atividade</h2>
+                <p>Utilizando o recurso de AJAX e a API do GIT (https://api.github.com/users/{nome do usuário}), implemente a funcionalidade de busca geral de usuários pelo nome, buscando e completando o resultado
+                    com os valores do usuário referentes a: foto, Nome, Bio, Blog e Location.
+                </p>  
+            </section>
+    </div>    
+    <div class="row">
+      <section class="jumbotron text-center col-6">
+        <div class="container">
+          <h1 class="jumbotron-heading">Nome do Usuário GIT</h1>
+          <p class="lead text-muted"><input type="text" id="usuario" value="usuario"></p>
+          <p>
+            <a href="#" class="btn btn-primary my-2"> <img src="assets/img/lupa.svg" width="15px"> Buscar</a>            
+          </p>
+        </div>
+      </section>
+      <section class="col-6">
+        <div>
+            <div class="card box-shadow" style="margin-right: 20px;">
+              <img class="card-img-top" id="avatar_url" src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Foto" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" id="nome"> Nome do usuário </p>
+                <p class="card-text" id="bio"> Bio do usuário </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="blog">Blog</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="location">Location</button>
+                  </div>
+                  <!--small class="text-muted">9 mins</small-->
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container text-center">
+        <p>Exercício apresentado na disciplina de Desenvolvimento de Interfaces WEB - 
+        PUC MINAS Barreiro - Prof. Paulo Henrique Rodrigues</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.min.js"></script>
+  </body>
+</html>

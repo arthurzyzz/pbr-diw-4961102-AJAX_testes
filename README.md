@@ -3,7 +3,7 @@
 Exemplos de requisição AJAX
 
 XHR
-<script>
+
 	function success () { console.log(JSON.parse(this.responseText)); } 
 	function error (err) { console.log('Erro:', err); }
 	var xhr = new XMLHttpRequest(); 
@@ -11,18 +11,18 @@ XHR
 	xhr.onerror = error;
 	xhr.open('GET', 'https://api.github.com/users/paulopta'); 
 	xhr.send();
-</script> 
+
 
 FETCH
-<script>
+
   fetch('https://api.github.com/users/paulopta')
   .then(res => res.json())
   .then (data => console.log(data))
   .catch(err => console.error('Erro:', err))
-</script>
+
 
 JQUERY
-<script>
+
 $.ajax({
   url: "your-api-endpoint",
   method: "GET",
@@ -42,4 +42,4 @@ $.ajax({
      // Handle complette 
   }
 });
-</script>
+
