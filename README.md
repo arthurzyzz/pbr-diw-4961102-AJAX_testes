@@ -15,10 +15,7 @@ XHR
 
 FETCH
 
-  fetch('https://api.github.com/users/paulopta')
-  .then(res => res.json())
-  .then (data => console.log(data))
-  .catch(err => console.error('Erro:', err))
+  fetch('https://api.github.com/users/paulopta').then(res => res.json()).then (data => console.log(data)).catch(err => console.error('Erro:', err));
 
 
 JQUERY
